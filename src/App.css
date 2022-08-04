@@ -1,38 +1,107 @@
-.App {
+.main-container {
+  padding: 50px 100px;
+}
+
+.main-container .loading h1 {
+  color: #e1e1e1;
   text-align: center;
+  padding-top: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container .search-box .input-box input {
+  padding: 10px 12px;
+  width: 400px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #e67e22;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main-container .pagination-box {
+  margin: 50px 0;
+}
+
+.main-container .pagination-box .page p {
+  color: #6c6c6c;
+  font-size: 14px;
+  margin: 0 14px;
+}
+
+.main-container .pagination-box .page button {
+  outline: none;
+  border: none;
+  background-color: #e67e22;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 50px;
+}
+
+.main-container .stories-box .card {
+  width: 500px;
+  background-color: #171b20;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-container .stories-box .card .title h1 {
+  font-weight: 700;
+  color: #e1e1e1;
+  font-size: 18px;
+}
+
+.main-container .stories-box .card .author {
+  margin: 12px 0 20px 0;
+}
+
+.main-container .stories-box .card .author p {
+  color: #6c6c6c;
+  font-size: 14px;
+}
+
+.main-container .stories-box .card .author p span {
+  font-weight: 600;
+}
+
+.main-container .stories-box .card .link a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.main-container .stories-box .card .link a.read-link {
+  color: #2980b9;
+}
+
+.main-container .stories-box .card .link a.remove-link {
+  color: #c0392b;
+}
+
+@media (max-width: 1023px) {
+  .main-container {
+    padding: 50px 50px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 767px) {
+  .main-container {
+    padding: 30px 20px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 550px) {
+  .main-container .search-box .input-box {
+    width: 100%;
+  }
+  .main-container .search-box .input-box input {
+    width: 100%;
+  }
+  .main-container .stories-box .card {
+    width: 100%;
   }
 }
